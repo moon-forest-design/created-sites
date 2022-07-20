@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* CSS variables color list
+================================================== */
+:root {
+  --color-default-black: #333;
+  --color-default-white: #fff;
+}
+
+/* base
+================================================== */
+body, blockquote, figure, i {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1.0rem;
+  height: inherit;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  color: var(--color-default-black, black);
+  background-color: var(--color-default-white, white);
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* main
+================================================== */
+.main {
+  height: inherit;
+  padding: 0 3%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-default-black, black);
+}
+.quote-box {
+  max-width: 500px;
+  padding: 3em 3.5em;
+  flex: 1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: var(--color-default-black, black);
+  background-color: var(--color-default-white, white);
+}
+.text {
+  font-size: 2.6rem;
+  margin-bottom: .5em;
+  text-align: center;
+}
+.text::before {
+  font-family: 'Font Awesome 6 free';
+  content: '\f10d';
+  font-size: 2.6rem;
+  margin-right: .5em;
+}
+.author {
+  font-size: 1.6rem;
+  margin-bottom: 3em;
+  text-align: right;
+}
+.author::before {
+  content: "-";
+  margin-right: .5em;
+}
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.tweet-quote {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: var(--color-default-white, white);
+  background-color: var(--color-default-black, black);
+}
+.fa-twitter {
+  font-size: 1.5rem;
+  font-style: normal;
+  padding: .8em;
+}
+.new-quote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 40px;
+  padding: .5em 1.5em;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: var(--color-default-white, white);
+  background-color: var(--color-default-black, black);
+}
+.color-anime {
+  transition: color 2.5s;
+}
+.bg-color-anime {
+  transition: background-color 2.5s;
+}
+
+/* footer
+================================================== */
+.remarks-column {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-default-white, white);
+  background-color: var(--color-default-black, black);
+}
+.remarks-column-list__link {
+  text-decoration: none;
+  color: inherit;
+}
